@@ -16,6 +16,15 @@ import java.sql.SQLException;
     -> FOREIGN KEY (post) REFERENCES posts(id)
     -> );
 
+ * create table posts (
+    -> id int not null auto_increment primary key,
+    -> post_id int not null
+    -> );
+ * 
+ *  create table departments (
+    -> id int not null auto_increment primary key,
+    -> department_id int not null
+    -> );
  * 
  * */
 

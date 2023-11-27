@@ -5,14 +5,16 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="../css/home.css">
 </head>
 <body>
 
 	<header>
 		<h1>人事情報管理アプリ</h1>
 	</header>
-	
+	<section class="emp-list">
 	<h2>新規登録</h2>
+	</section>
 	<% String success = (String)session.getAttribute("success"); %>
 	<% String passError = (String)request.getAttribute("passError"); %>
 	<% if(success != null) { %>
