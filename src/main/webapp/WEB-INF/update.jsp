@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="./home/css/home.css">
 </head>
 <% EmployeeDTO emp = (EmployeeDTO)request.getAttribute("emp"); %>
 <body>
@@ -35,7 +36,7 @@
 	<button type="submit">更新</button>
 	</form>
 	
-	</section>
+	<section class="list-section">
 	<h2>一覧へ戻る</h2>
 	<a href="<%=request.getContextPath()%>/emp-list-servlet">一覧へ</a>
 	</section>

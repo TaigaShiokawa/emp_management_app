@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="./home/css/home.css">
 </head>
 <body>
 
@@ -39,6 +40,11 @@
 	
 	<button type="submit">追加</button>
 	</form>
+	
+	<section class="list-section">
+	<h2>一覧へ戻る</h2>
+	<a href="<%=request.getContextPath()%>/emp-list-servlet">一覧へ</a>
+	</section>
 	
 	
 </body>
