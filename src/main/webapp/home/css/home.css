@@ -81,20 +81,20 @@ a {
 }
 
 .list-header {
-    color: #4A90E2; /* Example: Change the color for header on list page */
+    color: #4A90E2;
 }
 
 .list-section {
-    background-color: #e9e9e9; /* Example: Specific background for sections on list page */
+    background-color: #e9e9e9; 
 }
 
 .emp-list h3 {
     font-weight: normal;
-    color: #333; /* Example: Specific color for employee names */
+    color: #333;
 }
 
 .emp-actions a {
     margin-right: 10px;
     font-weight: bold;
-    color: #5b5b5b; /* Example: Specific styles for action links */
+    color: #5b5b5b; 
 }
