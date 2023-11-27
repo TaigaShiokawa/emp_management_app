@@ -20,7 +20,8 @@
 	<% if(success != null) { %>
 	<p><%=success %></p>
 	<% session.removeAttribute("success"); %>
-	<% } else if(passError != null) { %>
+	<% } %>
+	<% if(passError != null) { %>
 	<p><%=passError %></p>
 	<% } %>
 	<form action="<%=request.getContextPath()%>/register-servlet" method="post">

@@ -40,8 +40,8 @@ public class RegisterServlet extends HttpServlet {
 		int post = Integer.parseInt(request.getParameter("post"));
 		
 		if(password.length() < 8) {
-			request.setAttribute("passError", "8文字以上で入力してください");
-			request.getRequestDispatcher("home/register/register.jsp").forward(request, response);
+			request.setAttribute("passError", "8文字以上でお願いします！");
+			response.sendRedirect("home/register/register.jsp");
 			return;
 		}
 		

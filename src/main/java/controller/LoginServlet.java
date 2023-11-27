@@ -34,10 +34,12 @@ public class LoginServlet extends HttpServlet {
 		
 		request.setCharacterEncoding("UTF-8");
 		String name = request.getParameter("name");
+		String password = request.getParameter("password");
 		String hashedPass = null;
 		int post = Integer.parseInt(request.getParameter("post"));
+		
 		try {
-			hashedPass = HashedPW.hashePass(request.getParameter("password"));
+			hashedPass = HashedPW.hashePass(password);
 		} catch (NoSuchAlgorithmException e) {
 			e.printStackTrace();
 		}
