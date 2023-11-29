@@ -17,7 +17,7 @@ public class LoginDAO {
 		boolean status = false;
 		String sql = "SELECT * FROM employees WHERE name = ? AND password = ? AND post = ?";
 		
-		String hashedPass = HashedPW.hashePass(emp.getPassword());
+		String hashedPass = HashedPW.hashPass(emp.getPassword());
 		try (Connection con = DBConnection.getConnection(); 
 				PreparedStatement pstmt = con.prepareStatement(sql)) {
 			

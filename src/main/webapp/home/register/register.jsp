@@ -16,13 +16,14 @@
 	<h2>新規登録</h2>
 	</section>
 	<% String success = (String)session.getAttribute("success"); %>
-	<% String passError = (String)request.getAttribute("passError"); %>
+	<% String passError = (String)session.getAttribute("passError"); %>
 	<% if(success != null) { %>
 	<p><%=success %></p>
 	<% session.removeAttribute("success"); %>
 	<% } %>
 	<% if(passError != null) { %>
 	<p><%=passError %></p>
+	<% session.removeAttribute("passError"); %>
 	<% } %>
 	<form action="<%=request.getContextPath()%>/register-servlet" method="post">
 	<label for="name">

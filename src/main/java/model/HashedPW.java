@@ -5,7 +5,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class HashedPW {
-	public static String hashePass(String pass) throws NoSuchAlgorithmException {
+	public static String hashPass(String pass) throws NoSuchAlgorithmException {
 		
 		MessageDigest md = MessageDigest.getInstance("SHA-256"); //MessageDigestインスタンスの取得.
 		md.update(pass.getBytes()); //MessageDigestオブジェクトに入ってきたpwのバイト表現を追加.
@@ -14,5 +14,4 @@ public class HashedPW {
 		//1は正、-1は負, 0は符号なし.ここでは,16進数表現に一貫性を持たせるために1を使用.
 		return hex;
 	}
-
 }

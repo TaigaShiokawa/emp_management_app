@@ -41,7 +41,7 @@ public class EmployeeAddServlet extends HttpServlet {
 		
 		String hashedPass = null;
 		try {
-			hashedPass = HashedPW.hashePass(password);
+			hashedPass = HashedPW.hashPass(password);
 		} catch (NoSuchAlgorithmException e) {
 			e.printStackTrace();
 		}

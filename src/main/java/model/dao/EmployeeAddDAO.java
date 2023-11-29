@@ -16,7 +16,7 @@ public class EmployeeAddDAO {
 		int processing = 0;
 		String sql = "INSERT INTO employees (name, password, department, post) VALUES (?, ?, ?, ?)";
 		
-		String hashedPass = HashedPW.hashePass(emp.getPassword());
+		String hashedPass = HashedPW.hashPass(emp.getPassword());
 		
 		try (Connection con = DBConnection.getConnection(); 
 				PreparedStatement pstmt = con.prepareStatement(sql)) {
